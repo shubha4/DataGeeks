@@ -107,8 +107,8 @@ img {
     align-items: center;
 }
 div.details img {
-    max-height: 600px;
-    max-width: 600px;
+    max-height: 800px;
+    max-width: 800px;
 }
 .details {
     padding: 0rem;
@@ -116,6 +116,10 @@ div.details img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+img.source {
+    margin: 0;
+    padding: 0;
 }
 /* The Table */
 table {

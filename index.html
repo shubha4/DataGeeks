@@ -91,20 +91,50 @@
                     <li>Analytics & Dashboards</li>
                 </ul>
                 <div class="details">
-                        <img src = "img/pipeline.png"
-                        alt = "Common Controls Framework Data Import Pipeline">
-                        <p>Fig 1: Common Controls Framework Data Import Pipeline</figcaption>
+                    <img src = "img/pipeline.png"
+                    alt = "Common Controls Framework Data Import Pipeline">
+                    <p>Fig 1: Secure Controls Framework (SCF) Data Import Architecture</p>
                 </div>
-                
+                <h5>Data Source</h5>
+                <ul>
+                    <li>Secure Controls Framework (SCF) is a <u>meta framework</u> that maps to over 100 cybersecurity and privacy laws, regulations, and industry frameworks.</li>
+                    <li>The raw data resides in an Excel spreadsheet located on SCF’s GitHub repo, containing <u>1006 records and 251 variables.</u> It includes <u>control objective, citation, and authority document information.</u> Each relevant column of this spreadsheet corresponds to one or multiple fields of ServiceNow target tables according to the below <u>ERD diagram.</u> These tables are called “Control Objectives,” “Authority Documents,” and “Citations.”</li>
+                </ul>
+                <div class="details">
+                    <img src = "img/erd.png"
+                    alt = "ERD diagram mapping source data to target fields in ServiceNow">
+                    <p>Fig 2: ERD diagram mapping source data to target fields in ServiceNow</p>
+                </div>
+                <h5>Data Transformation</h5>
+                <ul>
+                    <li>We used Google Colab to collaborate on our coding and the R programming language to <u>clean and transform the raw SCF data into a format compatible</u> with ServiceNow target tables.</li>
+                </ul>
+                <h5>Data Storage & Management</h5>
+                <ul>
+                    <li>We <u>load, map, and import the cleaned data into their target fields</u> in ServiceNow. <u>Relational information between the target tables was established</u> during the import process.</li>
+                    <li>We also wrote an R script to <u>automatically detect any changes to the raw data</u>, which we then imported into ServiceNow to <u>update the existing records.</u></li>
+                </ul>
+                <h5>Analytics</h5>
+                <ul>
+                    <li>We created a dashboard in ServiceNow to <u>showcase a high-level overview of the imported data and enable further analytics.</u></li>
+                </ul>
             </div>
         </section>
         <section>
             <div class="container">
                 <h3>Results and Output</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non in optio voluptatum, consequatur nesciunt ut sequi voluptate perspiciatis dolorum deserunt et vitae voluptas fuga ad architecto autem sed! Consequatur, eveniet!</p>
+                <h4>Imported Data</h4>
+                <div class="details">
+                    <img class="source" src = "img/scf-I.png"
+                    alt = "Raw Data after being imported into the target tables">
+                    <img class="source" src = "img/scf-II.png"
+                    alt = "Detailed view of each type of document within ServiceNow">
+                    <p>After the data was cleaned and transformed, it was imported into ServiceNow with relationships established between the target tables. The above example with citation CC5.3 demonstrates these relationships, evidenced by the fact that each imported record in each table consists of associated information from at least one other table.
+                    </p>
+                </div>
+                <h4>ServiceNow Dashboard (In Progress)</h4>
             </div>
         </section>
-        
     </main>
     <footer>
         <div class="container">
