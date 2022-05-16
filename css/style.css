@@ -99,6 +99,10 @@ header {
     float: up;
     border-radius: 50%;
 }
+.about ul{
+    padding: 0;
+    text-align: center;
+}
 img {
     max-height: 200px;
     max-width: 200px;
