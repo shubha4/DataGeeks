@@ -48,6 +48,9 @@ p {
     margin: 0;
     line-height: 1.25;
 }
+div.details p {
+    padding: 0.5rem;
+}
 ul {
     margin: 0;
 }
