@@ -8,6 +8,8 @@
     <title>Capstone 2022: Data Geeks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway|Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,74 +19,131 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
+    
     <header> 
-        <div class="container">
-            <h1>About the Team</h1>
+        <div class="jumbotron-fluid">
+            <div class="container">
+                <div class="contain">
+                    <h1>About the Team</h1>
+                </div>
+            </div>
         </div>
     </header>
-    <h2 class = "center">Meet The Geeks!</h2>
+    <div class="container">
+        <h2 class = "center">Meet The Geeks!</h2>
+    </div>
     <main>
-        <section>
-            <table>
-                <thead class="color">
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <div class="container">
-                    <tbody class="about">
-                        <tr>
-                            <td>
-                                <a href="amruta.html">
-                                <img src = "img/amruta.png"
-                                alt = "Amruta Jadhav's headshot">
-                                <p>Amruta Jadhav</p></a></td>
-                            <td><h4>Data Analyst</h4></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="anh.html">
-                                <img src = "img/anh.png"
-                                alt = "Anh Huynh's headshot">
-                                <p>Anh Huynh</p></a></td>
-                            <td><h4>Data Analyst</h4></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="santosh.html">
-                                <img src = "img/santosh.png"
-                                alt = "Santosh Roy's headshot">
-                                <p>Santosh Roy</p></a></td>
-                            <td><h4>Project Manager</h4></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="shubha.html">
-                                <img src = "img/shubha.jpg"
-                                alt = "Shubha Tripathi's headshot">
-                                <p>Shubha Tripathi</p></a></td>
-                            <td><h4>Product Manager</h4></td>
-                        </tr>
-                    </tbody>
+        <div class = "container">
+            <div class="row">
+                <div class="card-deck">
+                    <div class="d-flex col-lg-6 col-xl-3">
+                        <!-- Card 1 -->
+                        <div class="card mb-4">
+                            <div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto col-xl-12">
+                                            <img src="img/amruta.png" alt="Amruta Jadhav's headshot" class="rounded mx-auto d-block pb-3"> <!--Taken from: https://getbootstrap.com/docs/4.0/content/images/-->
+                                        </div>
+                                        <div class="col-sm">
+                                            <h3 class="card-title text-center">Amruta Jadhav</h2>
+                                            <p class ="card-text text-center contain">Data Analyst</p>
+                                            <div class="col text-center"> <!--From here: https://stackoverflow.com/questions/41664991/bootstrap-4-how-do-i-center-align-a-button-->
+                                                <a href="amruta.html" class="btn">Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-lg-6 col-xl-3">
+                        <!-- Card 2 -->
+                        <div class="card mb-4">
+                            <div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto col-xl-12">
+                                            <img src="img/anh.png" alt="Anh Huynh's headshot" class="rounded mx-auto d-block pb-3"> <!--Taken from: https://getbootstrap.com/docs/4.0/content/images/-->
+                                        </div>
+                                        <div class="col-sm">
+                                            <h3 class="card-title text-center">Anh Huynh</h2>
+                                            <p class ="card-text text-center contain">Data Analyst</p>
+                                            <div class="col text-center"> <!--From here: https://stackoverflow.com/questions/41664991/bootstrap-4-how-do-i-center-align-a-button-->
+                                                <a href="anh.html" class="btn">Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-lg-6 col-xl-3">
+                        <!-- Card 3 -->
+                        <div class="card mb-4">
+                            <div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto col-xl-12">
+                                            <img src="img/santosh.png" alt="Santosh Roy's headshot" class="rounded mx-auto d-block pb-3"> <!--Taken from: https://getbootstrap.com/docs/4.0/content/images/-->
+                                        </div>
+                                        <div class="col-sm">
+                                            <h3 class="card-title text-center">Santosh Roy</h2>
+                                            <p class ="card-text text-center contain">Project Manager</p>
+                                            <div class="col text-center"> <!--From here: https://stackoverflow.com/questions/41664991/bootstrap-4-how-do-i-center-align-a-button-->
+                                                <a href="santosh.html" class="btn">Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex col-lg-6 col-xl-3">
+                    <!-- Card 4 -->
+                        <div class="card mb-4">
+                            <div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto col-xl-12">
+                                            <img src="img/shubha.jpg" alt="Shubha Tripathi's headshot" class="rounded mx-auto d-block pb-3"> <!--Taken from: https://getbootstrap.com/docs/4.0/content/images/-->
+                                        </div>
+                                        <div class="col-sm">
+                                            <h3 class="card-title text-center">Shubha Tripathi</h2>
+                                            <p class ="card-text text-center contain">Product Manager</p>
+                                            <div class="col text-center"> <!--From here: https://stackoverflow.com/questions/41664991/bootstrap-4-how-do-i-center-align-a-button-->
+                                                <a href="shubha.html" class="btn">Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </table>
-        </section>
-        <section>
-            <div class="container">
-                <h3 class="center">Acknowledgements</h3>
-                <p>We would like to thank the following people and group for mentoring and encouraging us throughout our project:</p>
-                <ul>
-                    <li>Professor Richard Sturman</li>
-                    <li>Christine Moeller</li>
-                    <li>Microsoft GRC Team</li>
-                </ul>
             </div>
-        </section>
+            
+            <section>
+                <div class="contain">
+                    <h3 class="center">Acknowledgements</h3>
+                    <p>We would like to thank the following people and group for mentoring and encouraging us throughout our project:</p>
+                    <ul>
+                        <li>Professor Richard Sturman</li>
+                        <li>Christine Moeller</li>
+                        <li>Microsoft GRC Team</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="container">
-            <p>&COPY; 2022, Data Geeks</p>
+            <div class="contain">
+                <p>&COPY; 2022, Data Geeks</p>
+            </div>
         </div>
     </footer>
 </body>
